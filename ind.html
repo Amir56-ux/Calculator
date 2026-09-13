@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="ind.css">
+</head>
+
+<body>
+  <div class="main">
+    <input type="text" id="display" readonly />
+
+    <div class="button-container">
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'1'; document.getElementById('display').value = currentvalue;">1</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'2'; document.getElementById('display').value = currentvalue;">2</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'3'; document.getElementById('display').value = currentvalue;">3</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'4'; document.getElementById('display').value = currentvalue;">4</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'5'; document.getElementById('display').value = currentvalue;">5</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'6'; document.getElementById('display').value = currentvalue;">6</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'7'; document.getElementById('display').value = currentvalue;">7</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'8'; document.getElementById('display').value = currentvalue;">8</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'9'; document.getElementById('display').value = currentvalue;">9</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'0'; document.getElementById('display').value = currentvalue;">0</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'.'; document.getElementById('display').value = currentvalue;">.</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'+'; document.getElementById('display').value = currentvalue;">+</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'-'; document.getElementById('display').value = currentvalue;">-</button>
+
+      <button class="button" onclick="
+        let result = eval(currentvalue);
+        currentvalue = result;
+        document.getElementById('display').value = currentvalue;">=</button>
+
+      <button class="button"
+        onclick="currentvalue=currentvalue +'/'; document.getElementById('display').value = currentvalue;">/</button>
+
+      <button class="button"
+        onclick="currentvalue=''; document.getElementById('display').value = currentvalue;">C</button>
+    </div>
+  </div>
+  <script src="ind.js"></script>
+</body>
+
+</html>
